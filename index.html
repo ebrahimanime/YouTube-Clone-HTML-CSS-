@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YouTube Clone</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="images/menu-icon.svg" alt="Menu" class="menu-icon" />
+      <img src="images/logo.png" alt="YouTube Logo" class="logo" />
+      <span class="logo-text">YouTube</span>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search" />
+      <img src="images/search-icon.svg" alt="Search" />
+    </div>
+
+    <div class="icons">
+      <img src="images/upload-icon.svg" alt="Upload" />
+      <img src="images/notification-icon.png" alt="Notifications" />
+      <img src="images/user-icon.jpg" alt="User" />
+    </div>
+  </header>
+
+  <!-- MAIN SECTION -->
+  <div class="main-container">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+      <button class="sidebar-link">Home</button>
+      <button class="sidebar-link">Explore</button>
+      <button class="sidebar-link">Shorts</button>
+      <button class="sidebar-link">Subscriptions</button>
+      <hr />
+      <button class="sidebar-link">Library</button>
+      <button class="sidebar-link">History</button>
+      <button class="sidebar-link">Your Videos</button>
+      <button class="sidebar-link">Watch Later</button>
+      <button class="sidebar-link">Liked Videos</button>
+    </nav>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+      <!-- CATEGORIES -->
+       <div class="categories-wrapper">
+  <button class="scroll-btn left" onclick="scrollCategories(-200)">&#10094;</button>
+
+  <nav class="categories" id="categories">
+    <button class="category active">All</button>
+    <button class="category">Music</button>
+    <button class="category">Gaming</button>
+    <button class="category">News</button>
+    <button class="category">Sports</button>
+    <button class="category">Education</button>
+    <button class="category">Live</button>
+    <button class="category">Comedy</button>
+    <button class="category">Movies</button>
+    <button class="category">Fashion</button>
+    <button class="category">Tech</button>
+    <button class="category">Podcasts</button>
+    <button class="category">DIY</button>
+    <button class="category">Fitness</button>
+    <button class="category">Food</button>
+    <button class="category">Travel</button>
+    <button class="category">Animals</button>
+    <button class="category">Science</button>
+    <button class="category">History</button>
+    <button class="category">Cars</button>
+    <button class="category">Finance</button>
+  </nav>
+
+  <button class="scroll-btn right" onclick="scrollCategories(200)">&#10095;</button>
+</div>
+
+
+      <!-- VIDEOS SECTION -->
+      <main class="videos">
+  <!-- ROW 1: Thumbnail1 -->
+  <div class="video-card">
+    <img src="images/thumbnail1.jpg" alt="Video Thumbnail" class="thumbnail" />
+    <div class="video-info">
+      <img src="images/channel1.jpg" alt="Channel Profile" class="channel-img" />
+      <div>
+        <h3 class="video-title">Sample Video Title</h3>
+        <p class="channel-name">Channel One</p>
+        <p class="video-stats">1.2M views • 2 days ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-card">
+    <img src="images/thumbnail1.jpg" alt="Video Thumbnail" class="thumbnail" />
+    <div class="video-info">
+      <img src="images/channel1.jpg" alt="Channel Profile" class="channel-img" />
+      <div>
+        <h3 class="video-title">Sample Video Title</h3>
+        <p class="channel-name">Channel One</p>
+        <p class="video-stats">1.2M views • 2 days ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-card">
+    <img src="images/thumbnail1.jpg" alt="Video Thumbnail" class="thumbnail" />
+    <div class="video-info">
+      <img src="images/channel1.jpg" alt="Channel Profile" class="channel-img" />
+      <div>
+        <h3 class="video-title">Sample Video Title</h3>
+        <p class="channel-name">Channel One</p>
+        <p class="video-stats">1.2M views • 2 days ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-card">
+    <img src="images/thumbnail1.jpg" alt="Video Thumbnail" class="thumbnail" />
+    <div class="video-info">
+      <img src="images/channel1.jpg" alt="Channel Profile" class="channel-img" />
+      <div>
+        <h3 class="video-title">Sample Video Title</h3>
+        <p class="channel-name">Channel One</p>
+        <p class="video-stats">1.2M views • 2 days ago</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROW 2: Thumbnail2 (video) -->
+  <div class="video-card">
+    <video class="thumbnail" src="images/thumbnail2.mp4" muted autoplay loop playsinline></video>
+    <div class="video-info">
+      <img src="images/channel2.jpg" alt="Channel Profile" class="channel-img" />
+      <div>
+        <h3 class="video-title">Sample Video Title</h3>
+        <p class="channel-name">Channel Two</p>
+        <p class="video-stats">854K views • 1 week ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-card">
+    <video class="thumbnail" src="images/thumbnail2.mp4" muted autoplay loop playsinline></video>
+    <div class="video-info">
+      <img src="images/channel2.jpg" alt="Channel Profile" class="channel-img" />
+      <div>
+        <h3 class="video-title">Sample Video Title</h3>
+        <p class="channel-name">Channel Two</p>
+        <p class="video-stats">854K views • 1 week ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-card">
+    <video class="thumbnail" src="images/thumbnail2.mp4" muted autoplay loop playsinline></video>
+    <div class="video-info">
+      <img src="images/channel2.jpg" alt="Channel Profile" class="channel-img" />
+      <div>
+        <h3 class="video-title">Sample Video Title</h3>
+        <p class="channel-name">Channel Two</p>
+        <p class="video-stats">854K views • 1 week ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-card">
+    <video class="thumbnail" src="images/thumbnail2.mp4" muted autoplay loop playsinline></video>
+    <div class="video-info">
+      <img src="images/channel2.jpg" alt="Channel Profile" class="channel-img" />
+      <div>
+        <h3 class="video-title">Sample Video Title</h3>
+        <p class="channel-name">Channel Two</p>
+        <p class="video-stats">854K views • 1 week ago</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROW 3: Thumbnail1 -->
+   <div class="video-card">
+    <img src="images/thumbnail1.jpg" alt="Video Thumbnail" class="thumbnail" />
+    <div class="video-info">
+      <img src="images/channel1.jpg" alt="Channel Profile" class="channel-img" />
+      <div>
+        <h3 class="video-title">Sample Video Title</h3>
+        <p class="channel-name">Channel One</p>
+        <p class="video-stats">1.2M views • 2 days ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-card">
+    <img src="images/thumbnail1.jpg" alt="Video Thumbnail" class="thumbnail" />
+    <div class="video-info">
+      <img src="images/channel1.jpg" alt="Channel Profile" class="channel-img" />
+      <div>
+        <h3 class="video-title">Sample Video Title</h3>
+        <p class="channel-name">Channel One</p>
+        <p class="video-stats">1.2M views • 2 days ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-card">
+    <img src="images/thumbnail1.jpg" alt="Video Thumbnail" class="thumbnail" />
+    <div class="video-info">
+      <img src="images/channel1.jpg" alt="Channel Profile" class="channel-img" />
+      <div>
+        <h3 class="video-title">Sample Video Title</h3>
+        <p class="channel-name">Channel One</p>
+        <p class="video-stats">1.2M views • 2 days ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-card">
+    <img src="images/thumbnail1.jpg" alt="Video Thumbnail" class="thumbnail" />
+    <div class="video-info">
+      <img src="images/channel1.jpg" alt="Channel Profile" class="channel-img" />
+      <div>
+        <h3 class="video-title">Sample Video Title</h3>
+        <p class="channel-name">Channel One</p>
+        <p class="video-stats">1.2M views • 2 days ago</p>
+      </div>
+    </div>
+  </div>
+  <!-- Repeat 4 more thumbnail1 cards -->
+   <div class="video-card">
+    <video class="thumbnail" src="images/thumbnail2.mp4" muted autoplay loop playsinline></video>
+    <div class="video-info">
+      <img src="images/channel2.jpg" alt="Channel Profile" class="channel-img" />
+      <div>
+        <h3 class="video-title">Sample Video Title</h3>
+        <p class="channel-name">Channel Two</p>
+        <p class="video-stats">854K views • 1 week ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-card">
+    <video class="thumbnail" src="images/thumbnail2.mp4" muted autoplay loop playsinline></video>
+    <div class="video-info">
+      <img src="images/channel2.jpg" alt="Channel Profile" class="channel-img" />
+      <div>
+        <h3 class="video-title">Sample Video Title</h3>
+        <p class="channel-name">Channel Two</p>
+        <p class="video-stats">854K views • 1 week ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-card">
+    <video class="thumbnail" src="images/thumbnail2.mp4" muted autoplay playsinline></video>
+    <div class="video-info">
+      <img src="images/channel2.jpg" alt="Channel Profile" class="channel-img" />
+      <div>
+        <h3 class="video-title">Sample Video Title</h3>
+        <p class="channel-name">Channel Two</p>
+        <p class="video-stats">854K views • 1 week ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-card">
+<video class="thumbnail" src="images/thumbnail2.mp4" muted autoplay playsinline></video>
+    <div class="video-info">
+      <img src="images/channel2.jpg" alt="Channel Profile" class="channel-img" />
+      <div>
+        <h3 class="video-title">Sample Video Title</h3>
+        <p class="channel-name">Channel Two</p>
+        <p class="video-stats">854K views • 1 week ago</p>
+      </div>
+    </div>
+  </div>
+  <!-- ROW 4: Thumbnail2 -->
+  <!-- Repeat 4 more thumbnail2 cards -->
+</main>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-categories">
+      <a href="#">About</a>
+      <a href="#">Press</a>
+      <a href="#">Contact</a>
+      <a href="#">Creators</a>
+      <a href="#">Advertise</a>
+    </div>
+    <p>© 2025 YouTube Clone. All rights reserved.</p>
+  </footer>
+
+  <script>
+  function scrollCategories(amount) {
+    const container = document.getElementById('categories');
+    container.scrollBy({ left: amount, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
